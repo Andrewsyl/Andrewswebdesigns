@@ -1,6 +1,7 @@
 from django.forms import ModelForm
-from contact.models import ContactForm
+from .models import ContactForm
 from django import forms
+
 
 class ContactView(ModelForm):
     message = forms.CharField(widget=forms.Textarea)

@@ -515,4 +515,27 @@ a.carousel-control.right {
     min-width: 70%;
 }
 
+.container-narrow > hr {
+    margin:30px 0;
+}
 
+.container-narrow {
+    margin:0 auto;
+    max-width:700px;
+}
+
+.contactpage {
+}
+
+#vid {
+    margin-top: -66px;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-size: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .4));
+}
+.messages {
+    text-align: center;
+}

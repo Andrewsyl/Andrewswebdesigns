@@ -1,0 +1,27 @@
+ <div class="contactpage">
+{% extends 'base.html' %}
+
+{% block content %}
+    <br><br><br>
+
+<video id="vid" autoplay muted>
+ <source src="../static/css/VE_004.mov" type="video/mp4">
+
+<h1>CONTACT US</h1>
+</video>
+    <div class="container-narrow">
+    {% load bootstrap_tags %}
+    <h3>Contact Us</h3>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form | as_bootstrap }}
+
+        <button type="submit" class="btn btn-btn-primary" data-toggle="modal" data-target="#myModal1">Submit</button>
+    </form>
+    </div>
+    <br><br>
+
+
+
+{% endblock %}
+</div>
