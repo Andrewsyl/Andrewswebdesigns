@@ -224,7 +224,3 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
-
-DEFAULT_FILE_STORAGE = 'myproject.s3utils.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = 'myproject.s3utils.StaticRootS3BotoStorage'
