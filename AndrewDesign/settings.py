@@ -217,6 +217,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
@@ -228,6 +229,3 @@ try:
     from AndrewDesign.local_settings import *
 except Exception as e:
     print e.message
-
-DEFAULT_FILE_STORAGE = 'myproject.s3utils.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = 'myproject.s3utils.StaticRootS3BotoStorage'
