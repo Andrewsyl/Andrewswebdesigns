@@ -224,7 +224,10 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
+try:
+    from AndrewDesign.local_settings import *
+except Exception as e:
+    print e.message
 
 DEFAULT_FILE_STORAGE = 'myproject.s3utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'myproject.s3utils.StaticRootS3BotoStorage'
