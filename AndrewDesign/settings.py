@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't6v&e+4m!d0h$g+b4)qvpti0=!2_-v-a*g)3akt3(+lu+%l+3u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -224,10 +224,7 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-try:
-    from AndrewDesign.local_settings import *
-except Exception as e:
-    print e.message
+
 
 DEFAULT_FILE_STORAGE = 'myproject.s3utils.MediaRootS3BotoStorage'
 STATICFILES_STORAGE = 'myproject.s3utils.StaticRootS3BotoStorage'
