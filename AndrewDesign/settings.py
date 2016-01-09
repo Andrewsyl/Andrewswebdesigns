@@ -229,5 +229,3 @@ try:
 except Exception as e:
     print e.message
 
-DEFAULT_FILE_STORAGE = 'myproject.s3utils.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = 'myproject.s3utils.StaticRootS3BotoStorage'
