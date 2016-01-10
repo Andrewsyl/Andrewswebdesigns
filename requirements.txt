@@ -8,6 +8,7 @@ coverage==3.6
 defusedxml==0.4.1
 dj-database-url==0.2.1
 django-countries==1.5
+django-forms-bootstrap==3.0.1
 django-storages==1.1.8
 django-tastypie==0.9.15
 gunicorn==0.17.4
