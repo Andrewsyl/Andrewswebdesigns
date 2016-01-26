@@ -2,17 +2,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="contactpage">
+    <div class="contactpage ">
     <br><br><br>
 
 <video id="vid" autoplay muted>
  <source src="../static/css/VE_004.mov" type="video/mp4">
 
-<h1>CONTACT US</h1>
 </video>
-    <div class="container-narrow wow zoomin">
+    <div class="container-narrow wow zoomIn">
     {% load bootstrap_tags %}
-    <h3>Contact Us</h3>
+    <h3>Contact Us - Write a little about your new site</h3>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form | as_bootstrap }}

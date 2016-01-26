@@ -12,7 +12,7 @@ def contact(request):
         if form.is_valid():
             my_form = form.save(commit=False)
             my_form.save()
-            messages.add_message(request, messages.SUCCESS, 'Your message has been sent. Thank you.')
+            messages.add_message(request, messages.SUCCESS, "Your message has been sent. Thanks a lot, I'll get back to you as soon as possible.")
             return HttpResponseRedirect('/contact')
         else:
             #form = ContactView()

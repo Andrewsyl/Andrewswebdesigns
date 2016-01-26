@@ -9,3 +9,4 @@ class ContactView(ModelForm):
     class Meta:  # fields that will be on webpage
         model = ContactForm
         fields = ('name', 'email','message')
+

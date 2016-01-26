@@ -511,7 +511,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #222;
+    -webkit-tap-highlight-color: #222;
 }
 
 
@@ -551,7 +551,7 @@ a.carousel-control.right {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    background-size: contain;
+    -webkit-background-size: contain;
     background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .4));
     width: 100%;
 }
