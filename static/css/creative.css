@@ -228,8 +228,15 @@ header .header-content .header-content-inner p {
         width: 70%;
         margin-right: auto;
         margin-left: auto;
-
     }
+
+}
+
+@media (max-width: 500px){
+    a.navbar-brand.page-scroll {
+        font-size: 12px;
+    }
+
 }
 
 @media (min-width: 768px) {
