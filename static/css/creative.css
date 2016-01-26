@@ -230,11 +230,17 @@ header .header-content .header-content-inner p {
         margin-left: auto;
     }
 
+
+
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     a.navbar-brand.page-scroll {
         font-size: 12px;
+    }
+    .item > img {
+        margin-right: auto;
+        margin-left: auto;
     }
 
 }
@@ -291,6 +297,10 @@ header .header-content .header-content-inner p {
     position: relative;
     margin: 0 auto;
     max-width: 650px;
+}
+
+#portfolio {
+    background-image: url("");
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -504,11 +514,6 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
-#owl-demo .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 a.carousel-control.left {
     background-image: none;
@@ -532,14 +537,13 @@ a.carousel-control.right {
 }
 
 .container-narrow > hr {
-    margin:30px 0;
+    margin: 30px 0;
 }
 
 .container-narrow {
-    margin:0 auto;
-    max-width:700px;
+    margin: 0 auto;
+    max-width: 700px;
 }
-
 
 #vid {
     margin-top: -66px;
@@ -551,17 +555,23 @@ a.carousel-control.right {
     background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .4));
     width: 100%;
 }
+
 .messages {
     text-align: center;
 }
 
-.item>img {
-    width: 85%;
+.item > img {
+    width: 80%;
 }
 
 section.carousel {
     background-color: #428f89;
 }
+
 div#myCarousel {
     background-color: #428f89;
+}
+
+textarea#id_message.form-control {
+    content: "Write a little description on the site you would like";
 }
