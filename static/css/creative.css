@@ -21,8 +21,7 @@ hr {
 }
 
 hr.car {
-    max-width: 150px;
-    border-width: 8px;
+
     border-color: whitesmoke;
 }
 
